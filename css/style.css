@@ -589,6 +589,7 @@ a:hover {
 .form-select,
 .form-textarea {
   width: 100%;
+  min-width: 0;
   padding: 10px 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -1161,6 +1162,10 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+}
+
+.task-form-row > * {
+  min-width: 0;
 }
 
 .task-form-row.two-cols {
