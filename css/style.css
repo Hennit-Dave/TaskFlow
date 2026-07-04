@@ -590,6 +590,7 @@ a:hover {
 .form-textarea {
   width: 100%;
   min-width: 0;
+  max-width: 100%;
   padding: 10px 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -1870,6 +1871,10 @@ textarea:focus-visible {
   }
 
   .dashboard-content {
+    padding: 16px;
+  }
+
+  .add-task-section {
     padding: 16px;
   }
 
