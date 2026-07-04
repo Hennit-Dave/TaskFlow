@@ -1209,6 +1209,7 @@ a:hover {
   cursor: pointer;
   background: transparent;
   color: var(--text-secondary);
+  white-space: nowrap;
   transition: all var(--transition);
 }
 
@@ -1904,7 +1905,14 @@ textarea:focus-visible {
 
   .filter-btn-group {
     width: 100%;
-    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .filter-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 7px 10px;
+    text-align: center;
   }
 
   .filter-selects {
@@ -1959,6 +1967,16 @@ textarea:focus-visible {
 
   .task-grid {
     grid-template-columns: 1fr;
+  }
+
+  .filter-btn-group {
+    gap: 2px;
+    padding: 3px;
+  }
+
+  .filter-btn {
+    padding: 6px 6px;
+    font-size: 11px;
   }
 }
 
